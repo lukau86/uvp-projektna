@@ -99,7 +99,7 @@ def podatki_o_delu(html_dela):
     if len(leto) > 0:
         leto = html.unescape(leto[0])
 
-        #upoštevamo samo števila s 4 števkami
+        # upoštevamo samo števila s 4 števkami
         leto = [int(l) for l in re.findall(r'\d+', leto) if len(l) == 4]
 
         if len(leto) > 0:
